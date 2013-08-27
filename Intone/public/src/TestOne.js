@@ -5,7 +5,7 @@ var incorrectAudiosT1 = participant.incorrectAudiosT1;
 
 //console.log(participant);
 
-var j = 59;
+var j = 60;
 var T1correctAnswer = "";
 
 var T1complimentCount = 0;
@@ -149,11 +149,10 @@ var showCross = function(){
 
 var versionT1 = function(){
 	if(participant.num%4==0 || participant.num%4 == 1){
+
 		participant.T1Version = "un";
 	}else{
-		participant.T1Version = "un";
-
-		// participant.T1Version = "deux";
+		participant.T1Version = "deux";
 	}
 }
 
@@ -221,7 +220,9 @@ if(j < sampleArray.length){
 		if(participant.num%2 == 0){
 			$("#test_2").show();
 		}else{
-			$(".end").show();
+			$("#test_2").show();
+
+			//$(".end").show();
 		}
 	}
 }

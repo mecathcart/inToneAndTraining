@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <title>inTone</title>
+    <meta charset="utf-8">
+	
+    <script type="text/javascript" charset="utf-8" src="./../lib/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./../lib/underscore.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./../css/intone.css" />
+
+    <meta property="og:title" content="inTone" />
+    <meta property="og:description" content="How good is your intonation?" />
+    <meta property="og:image" content="./../applepie128.png" />
+
+  </head>
+
+  <body>
+    <div class ="Heading">
+
+       <!-- the left side of the fork effect -->
+        <div class="l-triangle-top banner"></div>
+        <div class="l-triangle-bottom banner"></div>
+
+        <div class = "rectangle banner">
+                  <ul class="inTone">    <li><h1>  &#10029; Welcome to part 2 of the experiment! &#10029;</h1></li> 
+                  </ul>
+          </div>
+       <!-- the right side of the fork effect -->
+         <div class="r-triangle-top banner"></div>
+         <div class="r-triangle-bottom banner"></div>
+      </div>
+
+    <div id = "practice_instructions">
+      You will first hear an auditorily presented sentence.  Then you will see a fixation cross (+), followed by two written continuations.
+      <p>
+      Your task is to select the continuation that best follows the sentence you heard. 
+      <p>
+      You will have a practice session first, followed by the actual experiment, which lasts about 15 minutes.
+      <div id="start_practice">
+         <input  class = "large green button" type="button" value="Start Practice" onClick="practice()"/>
+      </div>
+    </div>
+
+    <div id="audio_div" class=""></div>
+    <div id="practice_cross" class= "cross"> + </div>
+    <div id="continuationA" onclick= "clickContA()" style="cursor:hand;cursor:pointer"></div>
+    <div id="continuationB" onclick= "clickContB()" style="cursor:hand;cursor:pointer"></div>
+   
+    <div id="practice_results"></div>
+    <div id="next">
+             <input  class = "large green button" type="button" value="Next" onClick="practice()"/>
+    </div>
+    <div id="test_1">
+      This is the end of the practice session.  Press the button to continue to the experiment.
+      <input  class = "large green button" type="button" value="Test One" onClick="chooseTest()"/>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="./../src/Participant.js"> </script>  
+    <script type="text/javascript" charset="utf-8" src="./../src/Practice.js"> </script>  
+    <script type="text/javascript" charset="utf-8" src="./../src/Stimuli.js"> </script> 
+
+  </body>
+</html>

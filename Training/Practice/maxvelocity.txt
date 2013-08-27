@@ -1,0 +1,6 @@
+Filename	question
+Q	0
+effectsI	0
+effectsN	0
+smellsI	0
+smellsN	0

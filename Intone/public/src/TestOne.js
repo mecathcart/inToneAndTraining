@@ -3,10 +3,9 @@ var participant = localStorage.getObject('participant');
 var correctAudiosT1 = participant.correctAudiosT1;
 var incorrectAudiosT1 = participant.incorrectAudiosT1;
 
-
 //console.log(participant);
 
-var j = 0;
+var j = 59;
 var T1correctAnswer = "";
 
 var T1complimentCount = 0;
@@ -152,7 +151,9 @@ var versionT1 = function(){
 	if(participant.num%4==0 || participant.num%4 == 1){
 		participant.T1Version = "un";
 	}else{
-		participant.T1Version = "deux";
+		participant.T1Version = "un";
+
+		// participant.T1Version = "deux";
 	}
 }
 
